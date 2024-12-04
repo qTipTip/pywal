@@ -6,7 +6,7 @@ authors = ["Ivar Stangeby <istangeby+pywal@gmail.com>"]
 readme = "README.md"
 license = "LICENSE.md"
 packages = [
-{ include = "pywal"}
+  { include = "pywal"}
 ]
 
 [tool.poetry.dependencies]
