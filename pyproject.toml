@@ -17,7 +17,12 @@ wal = 'pywal.__main__:main'
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
+pyright = {extras = ["nodejs"], version = "^1.1.389"}
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+include = ["pywal"]
+exclude = ["pywal/colorschemes/**"]
