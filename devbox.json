@@ -12,6 +12,9 @@
     "scripts": {
       "test": [
         "poetry run pytest"
+      ],
+      "lint": [
+        "poetry run pyright"
       ]
     }
   }
