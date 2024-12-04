@@ -25,8 +25,18 @@ The goal of Pywal was to be as out of the way as possible. It doesn't modify any
 
 Terminal emulators and TTYs have their color-schemes updated in real-time with no delay. With minimal configuration this functionality can be extended to almost anything running on your system.
 
-## Development Setup
+## Contribution
+
+### Development Setup
 
 We use Devbox for managing our development environment.
 Run `devbox shell` to install the required development dependencies.
 
+### Tests
+
+You can run the test-suite by running:
+```
+devbox run test
+# or
+poetry run pytest
+```

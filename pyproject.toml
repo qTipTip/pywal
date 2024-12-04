@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pywal-redux"
+version = "3.1.0"
+description = "Pywal Redux is a fork of the original pywal (https://github.com/dylanaraps/pywal), aiming to bring further updates to the tool."
+authors = ["Ivar Stangeby <istangeby+pywal@gmail.com>"]
+readme = "README.md"
+license = "LICENSE.md"
+packages = [
+  { include = "pywal"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+wal = 'pywal.__main__:main'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
